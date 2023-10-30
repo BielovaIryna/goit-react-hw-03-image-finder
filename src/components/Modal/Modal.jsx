@@ -11,7 +11,7 @@ export class Modal extends Component {
   }
   closeEsc = e => {
     if (e.code === 'Escape') {
-      this.props.onClose();
+      this.props.closeModal();
     }}
     handleOverayClick = e => {
       if (e.target === e.currentTarget) {
